@@ -1,0 +1,57 @@
+_id: req_a31813cc1d4949d8848016dd44653733
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157678
+created: 1683352157678
+url: "{{ _.base_url }}/classifications"
+name: >
+  Classifies the specified `query` using provided examples.
+
+
+  The endpoint first [searches](/docs/api-reference/searches) over the labeled examples
+
+  to select the ones most relevant for the particular query. Then, the relevant examples
+
+  are combined with the query to construct a prompt to produce the final label via the
+
+  [completions](/docs/api-reference/completions) endpoint.
+
+
+  Labeled examples can be provided via an uploaded `file`, or explicitly listed in the
+
+  request using the `examples` parameter for quick tests and small scale use cases.
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "model": "string",
+      "query": "The plot is not very attractive.",
+      "examples": "[['Do not see this film.', 'Negative'], ['Smart, provocative and blisteringly funny.', 'Positive']]",
+      "file": "string",
+      "labels": [
+        "Positive",
+        "Negative"
+      ],
+      "search_model": "ada",
+      "temperature": 0,
+      "logprobs": 0,
+      "max_examples": 200,
+      "logit_bias": {},
+      "return_prompt": true,
+      "return_metadata": true,
+      "expand": [],
+      "user": "user-1234"
+    }
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157678
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

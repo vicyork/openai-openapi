@@ -1,0 +1,21 @@
+_id: req_656f104cafd84ebda4242f3e572bce46
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683353020545
+created: 1683352157686
+url: "{{ _.base_url }}/models/{{ _.model }}"
+name: Delete a fine-tuned model. You must have the Owner role in your organization.
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157685.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

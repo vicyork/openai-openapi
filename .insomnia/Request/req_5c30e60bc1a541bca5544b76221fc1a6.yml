@@ -1,0 +1,22 @@
+_id: req_5c30e60bc1a541bca5544b76221fc1a6
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157663
+created: 1683352157663
+url: "{{ _.base_url }}/audio/translations"
+name: Translates audio into into English.
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157663
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

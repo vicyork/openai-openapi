@@ -1,0 +1,40 @@
+_id: req_ba60d6022a1d426ea6facf31416cc9aa
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157665
+created: 1683352157665
+url: "{{ _.base_url }}/engines/{{ _.engine_id }}/search"
+name: >
+  The search endpoint computes similarity scores between provided query and
+  documents. Documents can be passed directly to the API if there are no more
+  than 200 of them.
+
+
+  To go beyond the 200 document limit, documents can be processed offline and then used for efficient retrieval at query time. When `file` is set, the search endpoint searches over all the documents in the given file and returns up to the `max_rerank` number of documents. These documents will be returned along with their search scores.
+
+
+  The similarity score is a positive score that usually ranges from 0 to 300 (but can sometimes go higher), where a score above 200 usually means the document is semantically similar to the query.
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "query": "the president",
+      "documents": "['White House', 'hospital', 'school']",
+      "file": "string",
+      "max_rerank": 200,
+      "return_metadata": true,
+      "user": "user-1234"
+    }
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157665
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,14 @@
+_id: env_db291ec829094ea2b1135e21b7bb6c0e
+type: Environment
+parentId: env_34c3f916f4d34a9b95cc3cb07dda55ab
+modified: 1683352157654
+created: 1683352157654
+name: OpenAPI env api.openai.com
+data:
+  scheme: https
+  base_path: /v1
+  host: api.openai.com
+dataPropertyOrder: null
+color: null
+isPrivate: false
+metaSortKey: 1683352157654

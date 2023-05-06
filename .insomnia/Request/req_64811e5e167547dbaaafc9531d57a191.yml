@@ -1,0 +1,26 @@
+_id: req_64811e5e167547dbaaafc9531d57a191
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157668
+created: 1683352157668
+url: "{{ _.base_url }}/files"
+name: >
+  Upload a file that contains document(s) to be used across various
+  endpoints/features. Currently, the size of all the files uploaded by one
+  organization can be up to 1 GB. Please contact us if you need to increase the
+  storage limit.
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157668
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

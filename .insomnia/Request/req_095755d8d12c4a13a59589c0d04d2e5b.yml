@@ -1,0 +1,49 @@
+_id: req_095755d8d12c4a13a59589c0d04d2e5b
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157679
+created: 1683352157679
+url: "{{ _.base_url }}/fine-tunes"
+name: >
+  Creates a job that fine-tunes a specified model from a given dataset.
+
+
+  Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.
+
+
+  [Learn more about Fine-tuning](/docs/guides/fine-tuning)
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "training_file": "file-ajSREls59WBbvgSzJSVWxMCB",
+      "validation_file": "file-XjSREls59WBbvgSzJSVWxMCa",
+      "model": "curie",
+      "n_epochs": 4,
+      "batch_size": 0,
+      "learning_rate_multiplier": 0,
+      "prompt_loss_weight": 0.01,
+      "compute_classification_metrics": true,
+      "classification_n_classes": 0,
+      "classification_positive_class": "string",
+      "classification_betas": [
+        0.6,
+        1,
+        1.5,
+        2
+      ],
+      "suffix": "string"
+    }
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157679
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
