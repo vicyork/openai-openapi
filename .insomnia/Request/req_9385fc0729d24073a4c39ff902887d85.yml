@@ -1,0 +1,21 @@
+_id: req_9385fc0729d24073a4c39ff902887d85
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157671
+created: 1683352157671
+url: "{{ _.base_url }}/files/{{ _.file_id }}"
+name: Delete a file.
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157671
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

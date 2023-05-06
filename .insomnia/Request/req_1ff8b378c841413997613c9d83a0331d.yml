@@ -1,0 +1,43 @@
+_id: req_1ff8b378c841413997613c9d83a0331d
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157659
+created: 1683352157659
+url: "{{ _.base_url }}/chat/completions"
+name: Creates a completion for the chat message
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "model": "string",
+      "messages": [
+        {
+          "role": "string",
+          "content": "string",
+          "name": "string"
+        }
+      ],
+      "temperature": 1,
+      "top_p": 1,
+      "n": 1,
+      "stream": true,
+      "stop": null,
+      "max_tokens": "inf",
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "logit_bias": {},
+      "user": "user-1234"
+    }
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157659
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

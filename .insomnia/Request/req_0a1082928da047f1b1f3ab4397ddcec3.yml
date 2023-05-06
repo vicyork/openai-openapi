@@ -1,0 +1,24 @@
+_id: req_0a1082928da047f1b1f3ab4397ddcec3
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157681
+created: 1683352157681
+url: "{{ _.base_url }}/fine-tunes/{{ _.fine_tune_id }}"
+name: |
+  Gets info about the fine-tune job.
+
+  [Learn more about Fine-tuning](/docs/guides/fine-tuning)
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157681
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,22 @@
+_id: req_1f2179c6806947589df14a4a07afe76e
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157682
+created: 1683352157682
+url: "{{ _.base_url }}/fine-tunes/{{ _.fine_tune_id }}/cancel"
+name: |
+  Immediately cancel a fine-tune job.
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157682
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

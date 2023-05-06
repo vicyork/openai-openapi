@@ -1,0 +1,47 @@
+_id: req_e278e520efc849ba9f0d7d63baa2b100
+type: Request
+parentId: fld_2a8f386e3b1c4391bf46b705e2746741
+modified: 1683352157678
+created: 1683352157678
+url: "{{ _.base_url }}/answers"
+name: >
+  Answers the specified question using the provided documents and examples.
+
+
+  The endpoint first [searches](/docs/api-reference/searches) over provided documents or files to find relevant context. The relevant context is combined with the provided examples and question to create the prompt for [completion](/docs/api-reference/completions).
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "model": "string",
+      "question": "What is the capital of Japan?",
+      "examples": "[['What is the capital of Canada?', 'Ottawa'], ['Which province is Ottawa in?', 'Ontario']]",
+      "examples_context": "Ottawa, Canada's capital, is located in the east of southern Ontario, near the city of Montréal and the U.S. border.",
+      "documents": "['Japan is an island country in East Asia, located in the northwest Pacific Ocean.', 'Tokyo is the capital and most populous prefecture of Japan.']",
+      "file": "string",
+      "search_model": "ada",
+      "max_rerank": 200,
+      "temperature": 0,
+      "logprobs": 0,
+      "max_tokens": 16,
+      "stop": null,
+      "n": 1,
+      "logit_bias": {},
+      "return_metadata": true,
+      "return_prompt": true,
+      "expand": [],
+      "user": "user-1234"
+    }
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1683352157678
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
